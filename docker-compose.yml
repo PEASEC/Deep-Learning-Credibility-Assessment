@@ -1,0 +1,22 @@
+version: "3"
+services:
+  sma-classifier:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # The port of the classifier (please also update the ports and forward configuration of this
+      # docker-compose file)
+      - CLASSIFIER_PORT=8000
+      # The host of the classifier
+      - CLASSIFIER_HOST=0.0.0.0
+      # If set to true, the classifier will initialize all required data on startup.
+      # Otherwise the classifier will load all required resources when the first request is send.
+      - INITIALIZE_ALL_ON_STARTUP=FALSE
+      # Force the classifier to ignore a gpu if existing.
+      - IGNORE_GPU=FALSE
+
+networks:
+  default:
+    external:
+      name: sma-network

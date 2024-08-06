@@ -1,0 +1,9 @@
+torch==1.6.*
+torchvision>=0.7.0,<=0.8.99
+tqdm==4.*
+nltk==3.5
+emoji==0.6.0
+matplotlib==3.3.*
+fastapi==0.63.*
+uvicorn==0.13.*
+transformers==4.1.*

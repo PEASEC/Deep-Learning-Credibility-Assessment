@@ -1,0 +1,8 @@
+datasets/
+build/
+.vscode/
+.idea/
+__pycache__
+*.pyc
+resources/embeddings/**
+!resources/embeddings/*.zip
