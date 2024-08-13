@@ -8,6 +8,11 @@ git lfs install
 git lfs pull
 ```
 
+## Contact and Support
+
+If you have any questions, need access to datasets or the complete research data, or if you encounter any bugs, please feel free to contact me!
+
+
 ## Restful Server
 In most cases you want a restful server that can be used by external software like the
 [Social Media API](https://gitlab.dev.peasec.de/socialmedia/api-core).
